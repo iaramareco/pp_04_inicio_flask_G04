@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block titulo %}
+<h1>Total y Per Capita según el país</h1>
+{% endblock %}
+{% block contenido %}
+  <ol>
+  {% for pais in total_pcap %}
+  <li>{{ pais[0] }}, {{ pais[1] }}, {{ pais[2] }}</li>
+  {% endfor %}
+  </ol>
+{% endblock %}
+

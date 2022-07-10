@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+  <nav>
+<a href= "{{ url_for('index') }}">Inicio</a>
+<a href= "{{ url_for('listado_pcap') }}">Top 10 Per Capita</a>
+<a href= "{{ url_for('listado_total') }}">Top 10 Total</a>
+<a href= "{{ url_for('listado_paises', pais='Argentina') }}">Total y Per Capita</a>
+<a href= "{{ url_for('acerca_de') }}">Acerca de</a>
+</nav>
+{% block titulo %}{% endblock %}
+{% block contenido %}{% endblock %}
+</body>
+</html>
